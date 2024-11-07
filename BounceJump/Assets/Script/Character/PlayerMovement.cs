@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 1f;
-    public float jumpForce = 5f;
+    static public float speed = 3f;
+    static public float jumpForce = 7f;
     private Rigidbody rb = null;
     private bool onGround = true;
 

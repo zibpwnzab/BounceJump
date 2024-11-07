@@ -9,7 +9,7 @@ public class EndLevel : MonoBehaviour
 
     void Start()
     {
-        PlayerMovement = This.GetComponent<PlayerMovement>();
+        GetComponent<PlayerMovement>();
     }
 
     void Update()
@@ -18,6 +18,7 @@ public class EndLevel : MonoBehaviour
     }
     private void OnCollisionEnter(Collision EndLevelPad)
     {
-    
+        PlayerMovement.speed = 0;
+        PlayerMovement.jumpForce = 0;
     }
 }
