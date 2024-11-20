@@ -704,6 +704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4720dd85f3d0b95438ad6b2577f07d94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TimerStop: 1
   player: {fileID: 1657457995}
   EndLevelPad: {fileID: 1577699439}
 --- !u!65 &1577699441
