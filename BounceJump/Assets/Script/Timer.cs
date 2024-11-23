@@ -1,8 +1,11 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
     static public bool TimerStop = true;
+    public TextMeshProUGUI TextTimer;
     private float startTime; // Время начала игры
 
     void Start()
@@ -22,7 +25,10 @@ public class Timer : MonoBehaviour
 
             // Выводим результат в консоль
             Debug.Log($"{minutes:00}:{seconds:00}:{milliseconds:000}");
+            TextTimer.text = $"{minutes:00}:{seconds:00}:{milliseconds:000}";
+
         }
+
       
     }
 }

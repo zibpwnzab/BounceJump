@@ -10,7 +10,8 @@ public class EndLevel : MonoBehaviour
     public GameObject player;
     public GameObject EndLevelPad;
     public GameObject YouWinText;
-    public Button YouWinButton;
+    public GameObject TextTimer;
+    public GameObject YouWinButton;
 
     
     void Start()
@@ -30,6 +31,9 @@ public class EndLevel : MonoBehaviour
         PlayerMovement.jumpForce = 0;
         Timer.TimerStop = false;
         YouWinText.active = true;
+        TextTimer.active = true;
+        YouWinButton.active = true;
         
+
     }
 }
