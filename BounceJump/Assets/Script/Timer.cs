@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     static public bool TimerStop = true;
     public TextMeshProUGUI TextTimer;
-    private float startTime; // Время начала игры
+    static public float startTime; // Время начала игры
 
     void Start()
     {
