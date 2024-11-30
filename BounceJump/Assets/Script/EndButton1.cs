@@ -8,9 +8,6 @@ public class EndButton1 : MonoBehaviour
 {
     public Button Button;
     public GameObject Player;
-    public GameObject YouWinText;
-    public GameObject TextTimer;
-    public GameObject ButtonOff;
    
     
     void Start()
@@ -34,14 +31,10 @@ public class EndButton1 : MonoBehaviour
     }
 
 
-    void OnButtonClick()
+    public void OnButtonClick()
     {
         PlayerMovement.speed = 6f;
         PlayerMovement.jumpForce = 9f;
-        Player.transform.position = new Vector3(95, 6 ,-4.87f);
-        YouWinText.active = false;
-        TextTimer.active = false;
-        ButtonOff.active = false;
         Timer.startTime = Time.time;
         Timer.TimerStop = true;
 
