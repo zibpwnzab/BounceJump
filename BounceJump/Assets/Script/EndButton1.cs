@@ -37,6 +37,7 @@ public class EndButton1 : MonoBehaviour
         PlayerMovement.jumpForce = 9f;
         Timer.startTime = Time.time;
         Timer.TimerStop = true;
+        Debug.Log("Button is Pressed");
 
 
     }
