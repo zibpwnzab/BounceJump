@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EndButton1 : MonoBehaviour
+public class EndButton : MonoBehaviour
 {
     public Button Button;
     public GameObject Player;
