@@ -69,7 +69,7 @@ public class PlayerLives : MonoBehaviour
             Lives = 5;
         }
 
-        if (Lives == 0)
+        if (Lives <= 0)
         {
             PlayerMovement.speed = 0;
             PlayerMovement.jumpForce = 0;
