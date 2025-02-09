@@ -19,6 +19,7 @@ public class AddLives : MonoBehaviour
 
     private void OnCollisionEnter(Collision LiveBall)
     {
+        Debug.Log("AddLive");
         PlayerLives.Lives += 1;
         Destroy(BallOfLife);
     }

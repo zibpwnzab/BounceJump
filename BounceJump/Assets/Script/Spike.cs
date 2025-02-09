@@ -22,6 +22,7 @@ public class Spike : MonoBehaviour
 
     private void OnCollisionEnter(Collision DamageObject)
     {
+        Debug.Log("Damage");
         PlayerLives.Lives -= 1;
         Player.transform.position = Spawnpoint.transform.position;
     }

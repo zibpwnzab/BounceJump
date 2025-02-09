@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerLives : MonoBehaviour
 {
-    static public int Lives = 3;
+    static public float Lives = 3;
     public GameObject FirstLive;
     public GameObject SecondLive;
     public GameObject ThirdLive;
@@ -66,7 +66,7 @@ public class PlayerLives : MonoBehaviour
 
         if (Lives > 5)
         {
-            Lives = 5;
+            Lives = 5f;
         }
 
         if (Lives <= 0)
